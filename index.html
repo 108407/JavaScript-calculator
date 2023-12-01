@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>電卓</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <table class="Calculator">
+            <!--液晶画面-->
+            <tr>
+                <td colspan="4" id="result">0</td>
+            </tr>
+            <!--1段目-->
+            <tr>
+                <td colspan="1"><button class="button" value="7" onclick="clickbutton(this)">7</button></td>
+                <td colspan="1"><button class="button" value="8" onclick="clickbutton(this)">8</button></td>
+                <td colspan="1"><button class="button" value="9" onclick="clickbutton(this)">9</button></td>
+                <td colspan="1"><button class="button_operator" value="+" onclick="clickbutton_operator(this)">+</button></td>
+            </tr>
+            <!--2段目-->
+            <tr>
+                <td colspan="1"><button class="button" value="4" onclick="clickbutton(this)">4</button></td>
+                <td colspan="1"><button class="button" value="5" onclick="clickbutton(this)">5</button></td>
+                <td colspan="1"><button class="button" value="6" onclick="clickbutton(this)">6</button></td>
+                <td colspan="1"><button class="button_operator" value="-" onclick="clickbutton_operator(this)">-</button></td>
+            </tr>
+            <!--3段目-->
+            <tr>
+                <td colspan="1"><button class="button" value="1" onclick="clickbutton(this)">1</button></td>
+                <td colspan="1"><button class="button" value="2" onclick="clickbutton(this)">2</button></td>
+                <td colspan="1"><button class="button" value="3" onclick="clickbutton(this)">3</button></td>
+                <td colspan="1"><button class="button_operator" value="*" onclick="clickbutton_operator(this)">*</button></td>
+            </tr>
+            <!--4段目-->
+            <tr>
+                <td colspan="1"><button class="button" value="0" onclick="clickbutton(this)">0</button></td>
+                <td colspan="1"><button class="button" value="00" onclick="clickbutton(this)">00</button></td>
+                <td colspan="1"><button class="button_point" value="." onclick="clickbutton_point(this)">.</button></td>
+                <td colspan="1"><button class="button_operator" value="/" onclick="clickbutton_operator(this)">/</button></td>
+            </tr>
+            <!--5段目-->
+            <tr>
+                <td colspan="2"><button class="button_reset" value="AC" onclick="clickbutton_reset(this)">AC</button></td>
+                <td colspan="2"><button class="button_equal" value="=" onclick="clickbutton_equal(this)">=</button></td>
+            </tr>
+        </table>
+                
+        <script src="main.js"></script>
+    </body>
+</html>
